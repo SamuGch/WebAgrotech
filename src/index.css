@@ -1,0 +1,446 @@
+/* INICIO ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nova Mono', sans-serif;;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+
+}
+
+.buttonProgra{
+  width: 150px;
+}
+.color-acento {
+  color: rgb(24, 91, 24);
+}
+
+button {
+  font-family: 'Monoton';
+  padding: 15px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background: #00ff7f;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #008f5a;
+  color: white;
+}
+/*FIN ESTILOS GENERALES*/
+
+/* INICIO HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; 
+  gap: 30px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+  font-size: 1.25rem;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ff7f;
+}
+/* FIN HEADER */
+
+/* INICIO HERO */
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.5)
+  ), url('media/plantaciones.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+#hero h1 {
+  font-size: 6em;
+  margin-bottom: 5px;
+}
+
+#hero h3{
+  font-family: "Syne Mono";
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+/* FIN HERO */
+
+/* INNICIO SOMOS */
+#somos {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.5)
+  ), url('media/Agricultural.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* SECCIONES */
+section {
+  height: 100vh; /* Cada sección ocupa toda la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.texto{
+  font-size: 2rem;
+}
+/* FIN SOMOS*/
+
+/* INICIO NUESTROS PROGRAMAS */
+#nuestrosProgramas {
+  background: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.5)
+  ), url('media/fumigacion.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.programas{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.carta {
+  width: 40%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 110px;
+  border-radius: 20px;
+  margin: 20px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carta:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.5)
+  )
+  ,url("media/SistemaDeInventarios.avif");
+  background-position: center;
+  background-size: cover;
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.5)
+  )
+  ,url("media/SistemaGPS.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.fullscreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.fullscreen h2{
+  position: relative;
+  top: 8rem;
+}
+/* FIN NUESTROS PROGRAMAS */
+
+/* INICIO FINAL*/
+#final {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.5)
+  ), url('media/cultivos.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.cotizacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 7em;
+  text-align: center;
+}
+/*FIN FINAL*/
+
+/* INICIO FOOTER */
+.footer {
+  background: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-container {
+  margin-right: 50px;
+  text-align: right;
+}
+/*FIN FOOTER*/
+
+/* INICIO PROGRAMMODAL */
+.modalProgramas .modal-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 0.5)),
+    url('./assets/media/font_modal.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* texto blanco */
+  border-radius: 12px;
+  border: 2px solid #032e05;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.modalProgramas .modal-header,
+.modalProgramas .modal-footer {
+  border: none;
+}
+
+.modalProgramas .modal-title {
+  font-weight: bold;
+  color: #a8ff60;
+}
+
+.modalProgramas .btn-secondary {
+  background-color: #0e7611;
+  border: none;
+}
+
+.modalProgramas .btn-secondary:hover {
+  background-color: #0c4f0f;
+}
+
+.modal-text-justify {
+  text-align: justify;
+}
+
+/* FIN PROGRAMMODAL */
+
+/*INICIO CONTACTO*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0.3px;
+}
+
+form input {
+  width: 210px;
+  padding: 10px;
+  margin: 5px;
+  border: 3px solid #248a46;
+  border-radius: 15px;  
+  background-color: rgb(217, 224, 215);
+}
+
+form textarea {
+  width: 430px;
+  padding: 10px;
+  margin: 5px;
+  border: 3px solid #248a46;
+  border-radius: 15px;
+  resize: none;
+  background-color: rgb(217, 224, 215);
+}
+
+form select {
+  width: 430px;
+  padding: 10px;
+  margin: 5px;
+  border: 3px solid #248a46;
+  border-radius: 15px;
+  resize: none;
+  background-color: rgb(217, 224, 215);
+}
+
+.modal-text-justify {
+  text-align: center;
+}
+/*FIN CONTACTO*/
+
+
+
+/*@media (max-whidt: 750px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  nav{
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .logo-container {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  #hero h1{
+    font-size: 3em;
+  }
+
+  #hero h3 {
+    font-size: 1.1em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+
+  .programas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carta {
+    width: 80%;
+    padding: 60px;
+  }
+
+  .fullscreen h2 {
+    font-size: 1em;
+    top: 4em;
+  }
+
+  .texto {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+
+  .footer-container {
+    margin-right: 0;
+    text-align: center;
+  }
+
+}*/
