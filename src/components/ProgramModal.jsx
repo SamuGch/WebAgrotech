@@ -8,7 +8,8 @@ function ProgramModal({ showModal, handleModal, id, title, content }) {
     <Modal show={showModal} onHide={handleModal} id={id} 
     className="modalProgramas" 
     centered 
-    size='xl'>
+    size = 'lg'
+    >
       <Modal.Header closeButton>
         <Modal.Title>{title}</Modal.Title>
       </Modal.Header>

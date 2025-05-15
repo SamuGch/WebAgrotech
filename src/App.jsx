@@ -5,12 +5,11 @@ import Somos from './components/Somos';
 import Final from './components/Final';
 import Footer from './components/Footer';
 import NuestrosProgramas from './components/NuestrosProgramas';
+import './index.css'; // estilos
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-      </Routes>
       <Header />
       <Hero />
       <Somos  />

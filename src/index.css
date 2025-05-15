@@ -30,7 +30,8 @@ body {
   color: rgb(24, 91, 24);
 }
 
-button {
+button,
+.modalProgramas Button {
   font-family: 'Monoton';
   padding: 15px 30px;
   font-size: 1em;
@@ -43,7 +44,8 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+button:hover, 
+.modalProgramas Button:hover {
   background: #008f5a;
   color: white;
 }
@@ -98,6 +100,15 @@ nav a {
 
 nav a:hover {
   color: #00ff7f;
+}
+
+.menu-button {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer; 
 }
 /* FIN HEADER */
 
@@ -239,8 +250,8 @@ h2 {
 }
 
 .fullscreen h2{
-  position: relative;
-  top: 8rem;
+  margin-top: 10rem;
+  margin-bottom: 0.5rem;
 }
 /* FIN NUESTROS PROGRAMAS */
 
@@ -290,7 +301,7 @@ h2 {
 
 /* INICIO PROGRAMMODAL */
 .modalProgramas .modal-content {
-  background-image: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)),
     url('./assets/media/font_modal.jpg');
   background-size: cover;
   background-position: center;
@@ -321,7 +332,7 @@ h2 {
 }
 
 .modal-text-justify {
-  text-align: justify;
+  text-align: left;
 }
 
 /* FIN PROGRAMMODAL */
@@ -347,7 +358,7 @@ form input {
   margin: 5px;
   border: 3px solid #248a46;
   border-radius: 15px;  
-  background-color: rgb(217, 224, 215);
+  background-color: rgb(242, 246, 241);
 }
 
 form textarea {
@@ -357,7 +368,7 @@ form textarea {
   border: 3px solid #248a46;
   border-radius: 15px;
   resize: none;
-  background-color: rgb(217, 224, 215);
+  background-color:rgb(242, 246, 241);
 }
 
 form select {
@@ -367,80 +378,93 @@ form select {
   border: 3px solid #248a46;
   border-radius: 15px;
   resize: none;
-  background-color: rgb(217, 224, 215);
+  background-color:rgb(242, 246, 241);
 }
 
-.modal-text-justify {
-  text-align: center;
-}
 /*FIN CONTACTO*/
 
+/* INICIO RESPONSIVE */
+#hero h1 {
+  font-size: clamp(2.5rem, 6vw, 6em);
+}
 
+#hero h3 {
+  font-size: clamp(1.2rem, 3vw, 1.5em);
+}
 
-/*@media (max-whidt: 750px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
+h2 {
+  font-size: clamp(2rem, 5vw, 3em);
+}
 
-  nav{
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin-top: 10px;
-  }
+.texto {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+button, .modalProgramas Button {
+  padding: clamp(10px, 2vw, 15px) clamp(20px, 4vw, 30px);
+  font-size: clamp(0.9rem, 1.5vw, 1em);
+}
+.logo {
+  font-size: clamp(1.2rem, 2vw, 1.5em);
+}
 
-  .logo-container {
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 5px;
-  }
+nav {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  gap: clamp(20px, 5vw, 50px);
+}
+.carta {
+  width: clamp(250px, 40%, 500px);
+  padding: clamp(30px, 5vw, 110px);
+  margin: clamp(10px, 2vw, 20px);
+}
+form input {
+  width: clamp(110px, 40vw, 210px);
+  padding: clamp(8px, 2vw, 10px);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+form textarea,
+form select {
+  width: clamp(230px, 80vw, 430px);
+  padding: clamp(8px, 2vw, 10px);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
 
-  .logo {
-    font-size: 1.2em;
-  }
-
-  #hero h1{
-    font-size: 3em;
-  }
-
-  #hero h3 {
-    font-size: 1.1em;
-  }
-
-  button {
-    font-size: 0.9em;
-    padding: 10px 20px;
-  }
-
-  .programas {
+@media (max-width: 900px) {
+  .programas{
     flex-direction: column;
     align-items: center;
   }
 
   .carta {
-    width: 80%;
-    padding: 60px;
+    width: 70%;
+    padding: 70px; 
   }
 
-  .fullscreen h2 {
-    font-size: 1em;
-    top: 4em;
+  nav {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 200px;
+    padding: 20px;
+    flex-direction: column;
+    display: none;
+    gap: 20px;
+    z-index: 99;
+    background: rgba(40, 53, 44, 10);
+    backdrop-filter: blur(5px);
+    border-radius: 10px 10px 10px 10px;
+    transition: transform 0.3s ease; 
   }
 
-  .texto {
-    font-size: 1.2em;
-    padding: 10px;
+  nav.active {
+    display: flex;
+  }
+  
+  .menu-button {
+    display: block;
   }
 
-  .footer {
-    justify-content: center;
-  }
+}
 
-  .footer-container {
-    margin-right: 0;
-    text-align: center;
-  }
 
-}*/
+
+/* FIN RESPONSIVE */

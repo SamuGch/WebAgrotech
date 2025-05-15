@@ -43,8 +43,8 @@ const Contacto = ({ onSuccess }) => {
   if (status === 'success') {
     return (
       <div className="mensaje-exito">
-        <h3> <n>Mensaje enviado con éxito</n></h3>
-        <p>Nos pondremos en contacto contigo pronto.</p>
+        <h3> <n> Mensaje enviado con éxito </n></h3>
+        <p> Nos pondremos en contacto contigo pronto. </p>
       </div>
     );
   }
@@ -52,8 +52,8 @@ const Contacto = ({ onSuccess }) => {
   if (status === 'error') {
     return (
       <div className="mensaje-error">
-        <h3><n>Hubo un error al enviar el mensaje</n></h3>
-        <p>Por favor, inténtalo de nuevo más tarde.</p>
+        <h3><n> Hubo un error al enviar el mensaje </n></h3>
+        <p> Por favor, inténtalo de nuevo más tarde. </p>
         <button onClick={() => setStatus('form')}>Volver</button>
       </div>
     );
