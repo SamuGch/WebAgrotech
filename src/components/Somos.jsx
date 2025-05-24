@@ -20,9 +20,17 @@ const Somos = () => {
         <div className="img_container"></div>
         <div className="texto">
           <p>
-            AGROTECH es una solución innovadora diseñada para optimizar el monitoreo y control de cultivos. <br />
-            Nuestra aplicación permite a los agricultores supervisar en tiempo real la ubicación y desempeño de su equipo,
-            mejorando la eficiencia operativa y reduciendo costos. 🌱📍
+            En nuestro emprendimiento nos dedicamos al desarrollo de software especializado para optimizar las tareas en el ámbito agrícola.
+            Creemos en el poder de la tecnología como herramienta clave para modernizar y hacer más eficientes los procesos del campo.
+          </p>
+          <p>
+            Actualmente, contamos con un sistema innovador de inventarios y control de seguimiento diseñado específicamente para el área de fumigación.
+            Esta solución permite llevar un control preciso de insumos, programar y monitorear fumigaciones, y generar reportes que facilitan la toma de decisiones,
+            garantizando una gestión más segura, eficiente y sostenible.
+          </p>
+          <p>
+            Nuestro objetivo es seguir creando herramientas tecnológicas que apoyen al agricultor en su labor diaria,
+            contribuyendo al desarrollo de una agricultura más inteligente y productiva.
           </p>
         </div>
       </div>
